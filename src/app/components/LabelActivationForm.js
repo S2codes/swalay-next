@@ -5,8 +5,8 @@ const LabelActivationForm = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-500 p-4">
       <div className="bg-white p-8 md:p-10 rounded-lg shadow-xl w-full max-w-lg">
-        <h1 className="text-3xl font-extrabold mb-6 text-center text-gray-800">Label Activation</h1>
-        <p className="text-center mb-6 text-gray-600">For SwaLay Authorized Employees</p>
+        <h1 className="text-3xl font-extrabold mb-6 text-center text-blue-800">Label Activation</h1>
+        <p className="text-center mb-6 text-blue-800">For SwaLay Authorized Employees</p>
         <form>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Full Name</label>
