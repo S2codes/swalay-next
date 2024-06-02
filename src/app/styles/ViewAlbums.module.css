@@ -67,7 +67,7 @@
 .subheading{
     font-size: 18px;
     font-weight: 600;
-    color: #09090b;
+    color: #030712;
 }
 
 /* .subheading i{
@@ -78,21 +78,48 @@
     /* border: 2px solid red; */
     width: 100%;
     display: flex;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
+    justify-content: space-between;
+    
+    /* padding: 20px; */
+    /* background-color: #fff;
+    border-radius: 10px; */
 
 }
 
 .tracksContainer{
-    width: 50%;
+    width: 65%;
     /* border: 2px solid rgb(15, 82, 217); */
-    padding: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #b0afafc4;
 }
 .trackDetails{
     /* border: 2px solid rgb(20, 144, 34); */
-    width: 50%;
+    width: 34%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #b0afafc4;
 }
+.trackDetailsTop{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trackDetailsIconGroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.trackDetailsIconGroup i{
+    font-size: 20px;
+    margin-left: 17px;
+    cursor: pointer;
+}
+
 .trackList{
     padding: 2px;
     max-height: 70vh;
@@ -150,14 +177,14 @@
     transition: 0.2s all ease-out;
 }
 .trackItemTrackName{
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 600;
     color: #1c1c1cef;
     transition: 0.2s all ease-out;
 }
 
 .trackItemTrackSingerName{
-    font-size: 16px;
+    font-size: 15px;
 }
 .trackItemInfo{
     /* border: 4px solid green; */
@@ -192,9 +219,14 @@
 
 .trackInfoTrackName{
     font-size: 16px;
-    color: #09090b;
+    color: #030712;;
     font-weight: 600;
 
+}
+
+.trackNameIcon{
+    font-size: 25px;
+    color: #3270ff;
 }
 
 

@@ -50,8 +50,8 @@ const albums = () => {
                 <div className={` mb-3 ${Style.spaceBetween}`}>
                     <h3 className={Style.titleHeading}>All releases</h3>
                     <div className={Style.slideController}>
-                        <i class="bi bi-sort-alpha-down mr-3"></i>
-                        <i class="bi bi-sort-alpha-down-alt"></i>
+                        <i className="bi bi-sort-alpha-down mr-3"></i>
+                        <i className="bi bi-sort-alpha-down-alt"></i>
                     </div>
                 </div>
 

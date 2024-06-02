@@ -3,6 +3,8 @@ import Style from '../../styles/ViewAlbums.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Button } from "@/components/ui/button"
+import { buttonVariants } from "@/components/ui/button"
 
 
 // import MusicPlayer from '../components/MusicPlayer'
@@ -39,8 +41,12 @@ const albums = () => {
 
             <div className={` mt-3 ${Style.trackContainer}`}>
                 <div className={`p-1 ${Style.tracksContainer}`}>
-                    <h5 className={Style.subheading}><i className="bi bi-music-note"></i> Tracks</h5>
-                    <ul className={`mt-2 ${Style.trackList}`}>
+                    {/* <h5 className={Style.subheading}><i className="bi bi-music-note"></i> Tracks</h5> */}
+                    <div className={`mt-3 ${Style.trackDetailsTop}`}>
+                        <h5 className={Style.subheading}> Tracks</h5>
+                        <Link href="/" className={buttonVariants({ variant: "default" })}><i className="bi bi-plus-circle mr-2"></i> Add Track</Link>
+                    </div>
+                    <ul className={`mt-3 ${Style.trackList}`}>
 
                         <li className={`mb-4 ${Style.trackItem}`}>
                             <span className={`me-2 ${Style.trackItemNumber}`}>01.</span>
@@ -137,25 +143,53 @@ const albums = () => {
                     </ul>
                 </div>
                 <div className={`p-1 ${Style.trackDetails}`}>
-                    <h5 className={Style.subheading}><i className="bi bi-music-note-list"></i> Track Details</h5>
+                    {/* <h5 className={Style.subheading}><i className="bi bi-music-note-list"></i> Track Details</h5> */}
+                    <div className={Style.trackDetailsTop}>
+                        <h5 className={`mt-3 ${Style.subheading}`}> Track Details</h5>
+                        <div className={Style.trackDetailsIconGroup}>
+                            <i className="bi bi-link-45deg"></i>
+                            <i className="bi bi-pencil-square"></i>
+                            <i className="bi bi-download"></i>
+                            <i className="bi bi-trash"></i>
+                        </div>
+                    </div>
                     <div className={`p-3 mt-2 ${Style.currentTrackDetails} `}>
                         {/* <p className={`mb-3 ${Style.trackInfoTrackName}`}><span className={Style.trackNameLable}>Track Name: </span> Lost in Mountain</p> */}
-                        <p className={`mb-4 ${Style.trackInfoTrackName}`}> Lost in Mountain</p>
-                        {/* <ul className='mb-3'> */}
-                            {/* <li><span>  </span></li> */}
-                            {/* <li><span>Producer Name</span></li>
-                            <li><span>Comopser Name</span></li> */}
-                        {/* </ul> */}
+                        <p className={`mb-3 ${Style.trackInfoTrackName}`}><i className={`bi bi-music-note-list ${Style.trackNameIcon}`}></i> Lost in Mountain</p>
+                        <span className="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">Mood</span>
+                        <span className="ms-3 inline-flex items-center rounded-md bg-blue-50 px-2 py-1 text-xs font-medium text-blue-700 ring-1 ring-inset ring-blue-700/10">Genre</span>
 
-                        <Tabs defaultValue="account" className="w-100">
-                            <TabsList>
-                                <TabsTrigger value="account">Track Info</TabsTrigger>
-                                <TabsTrigger value="password">Publishing Info</TabsTrigger>
-                            </TabsList>
-                            <TabsContent value="account">Make changes to your account here.</TabsContent>
-                            <TabsContent value="password">Change your password here.</TabsContent>
-                        </Tabs>
+                        <div className="mt-3">
+                            <Tabs defaultValue="account" className="w-100">
+                                <TabsList>
+                                    <TabsTrigger value="account">Track Info</TabsTrigger>
+                                    <TabsTrigger value="password">Publishing Info</TabsTrigger>
+                                </TabsList>
+                                <TabsContent value="account">
+                                    <div className="border-solid border-2 p-2">
+                                        <ul>
+                                            <li><span>Singer</span></li>
+                                            <li><span>Other singer:</span></li>
+                                            <li><span>Producer:</span></li>
+                                            <li><span>Other producer:</span></li>
+                                            <li><span>Lyricst:</span></li>
+                                        </ul>
+                                    </div>
 
+                                </TabsContent>
+                                <TabsContent value="password">Change your password here.</TabsContent>
+                            </Tabs>
+                        </div>
+
+                        {/* <div className={`mt-4 flex  ${Style.socialGroup}`}> */}
+                        <div className={`mt-4 flex `}>
+                            <Link href={"/"}>
+                                <Image src={"/images/image.png"} width={50} height={50} alt='music platfrom' />
+                            </Link>
+                            <Link href={"/"} className='ms-3'>
+                                <Image src={"/images/spotify.png"} width={50} height={50} alt='music platfrom' />
+                            </Link>
+                        </div>
 
                     </div>
                 </div>

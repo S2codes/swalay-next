@@ -70,11 +70,11 @@ const Navbar = () => {
                   <span className="nav__name ">Copyright</span>
                 </a>
                 <a href="/lables" className="nav__link " onClick={handleLinkClick}>
-                  <i className="bi bi-person-fill nav__icon"></i>
+                  <i className="bi bi-layers nav__icon"></i>
                   <span className="nav__name">Labels</span>
                 </a>
                 <a href="/artists" className="nav__link " onClick={handleLinkClick}>
-                  <i className="bi bi-people-fill nav__icon"></i>
+                  <i className="bi bi bi-mic nav__icon"></i>
                   <span className="nav__name">Artist Relocation</span>
                 </a>
                 <a href="/instagram" className="nav__link " onClick={handleLinkClick}>

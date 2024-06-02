@@ -6,7 +6,7 @@ const MusicListItem = ({ srno = 1, albumName, singer, totalTrack, status }) => {
     return (
         <div className={Style.musicItem}>
             <ul>
-                <li><span className={`mr-2 ${Style.sno}`}># {srno}</span>
+                <li><span className={`mr-2 ${Style.sno}`}># {srno} </span>
                     <Link className={Style.albumLink} href='/albums/viewalbum'>{albumName}</Link></li>
                 <li className='ml-2'><i className="bi bi-person mr-2"></i> {singer}</li>
                 <li className='ml-2'><i className="bi bi-music-note-beamed mr-2"></i> {totalTrack}</li>

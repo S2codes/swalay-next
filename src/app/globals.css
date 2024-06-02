@@ -411,6 +411,10 @@ img {
 }
 
 
+.border-thin-gray{
+  border: 1px solid #b0afafc4;
+}
+
 
 /* footer  */
 footer {

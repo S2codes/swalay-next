@@ -45,35 +45,35 @@ const Home = () => {
 
       </div>
 
-      <div className={`mt-3 p-2 ${Style.toolContainer}`}>
+      <div className={`mt-3 p-2  ${Style.toolContainer}`}>
 
-        <div className={`p-3 ${Style.toolBox}`}>
+        <div className={`p-3 border-thin-gray ${Style.toolBox}`}>
           <h4 className={Style.headingLabel}>Tools</h4>
           <div className={Style.toolList}>
             <div className={Style.toolRed}>
-            <i className={`bi bi-music-note-beamed ${Style.toolIcon}`}></i>
-             <p>Add New Album</p>
+              <i className={`bi bi-music-note-beamed ${Style.toolIcon}`}></i>
+              <p>Add New Album</p>
             </div>
             <div className={Style.toolBlue}>
-            <i className={`bi bi-file-earmark-minus-fill ${Style.toolIcon}`}></i>
+              <i className={`bi bi-file-earmark-minus-fill ${Style.toolIcon}`}></i>
               <p>Label Agreement</p>
             </div>
             <div className={Style.toolPurple}>
-            <i className={`bi bi-plus-circle-fill ${Style.toolIcon}`}></i>
+              <i className={`bi bi-plus-circle-fill ${Style.toolIcon}`}></i>
               <p>Label Registration</p>
             </div>
             <div className={Style.toolYellow}>
-            <i className={`bi bi-youtube ${Style.toolIcon}`}></i>
+              <i className={`bi bi-youtube ${Style.toolIcon}`}></i>
               <p>Copyright Claims</p>
             </div>
             <div className={Style.toolPink}>
-            <i className={`bi bi-currency-rupee ${Style.toolIcon}`}></i>
+              <i className={`bi bi-currency-rupee ${Style.toolIcon}`}></i>
               <p>Add Payments</p>
             </div>
           </div>
         </div>
 
-        <div className={`p-3 px-5 ${Style.notesBook}`}>
+        <div className={`p-3 px-5 border-thin-gray ${Style.notesBook}`}>
           <h4 className={Style.headingLabel}>Notification</h4>
 
           <div className="mb-3">
