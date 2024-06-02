@@ -9,9 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+<<<<<<< HEAD
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18"
+=======
+    "@radix-ui/react-label": "^2.0.2",
+    "@tabler/icons-react": "^3.5.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.10",
+    "next": "14.2.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.3.0"
+>>>>>>> 7cc40513419c36b2cdba0b0380f6afcf05afbf42
   },
   "devDependencies": {
     "@types/node": "^20",
