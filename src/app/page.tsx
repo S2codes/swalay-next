@@ -1,6 +1,6 @@
 // pages/index.js
 import Head from 'next/head'
-import LabelActivationForm from './components/LabelActivationForm'
+import { SignupFormDemo  } from './components/LabelActivationForm'
 
 export default function Home() {
   return (
@@ -9,7 +9,9 @@ export default function Home() {
         <title>Label Activation</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <LabelActivationForm />
+      <SignupFormDemo />
+      
+      
     </div>
   )
 }
