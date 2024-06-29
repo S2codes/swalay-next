@@ -1,8 +1,7 @@
 // pages/index.js
 import Head from 'next/head'
 import { SignupFormDemo  } from './components/LabelActivationForm'
-import TrackDetailsForm from './components/TrackForm'
-//import TrackDetailsForm from './components/TrackDetailsForm'
+import NewTrack from './components/TrackForm'
 
 export default function Home() {
   return (
@@ -12,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <SignupFormDemo />
-      <TrackDetailsForm/>
+      <NewTrack/>
       </div>
   )
 }
